@@ -12,7 +12,7 @@ header{
     border-bottom-right-radius: 100px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 /* For Dmax-width: 768pxekstop Views */
 .mobSideNavBarHide{
     display: none;
@@ -95,8 +95,9 @@ header{
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 60vw;
+    position: absolute;
 }
-.PlaceOrderForm-itemList{
+/* .PlaceOrderForm-itemList{
     width: 50vw;
     height: 40vh;
     background-color: rgb(183, 182, 190);
@@ -105,14 +106,15 @@ header{
     margin-left: 20px;
     position: absolute;
     
-}
-.PlaceOrderForm-CartList{
+} */
+/* .PlaceOrderForm-CartList{
     width: 76vw;
     height: 40vh;
     background-color: rgb(199, 222, 239);
     border-radius:20px;
     margin-top: 10px;
     margin-left: 5vw;
+    position: absolute;
 }
 .PlaceOrderForm-Total{
     width: 76vw;
@@ -129,10 +131,15 @@ header{
     border-radius:20px;
     margin-top: 5px;
     margin-left: 5vw;
+    position: absolute;
+} */
+.placeorderbtn{
+    margin-top: 500px;
+    margin-left: 5vw;
 }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .mobSideNavBarHide{
         display: none;
     }
@@ -212,6 +219,9 @@ header{
         background-color: rgb(183, 182, 190);
         border-radius:20px;
         margin-top: 5px;
+        margin-left: 5vw;
+    }
+    .placeorderbtn{
         margin-left: 5vw;
     }
  }
