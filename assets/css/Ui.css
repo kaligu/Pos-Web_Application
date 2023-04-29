@@ -90,52 +90,52 @@ header{
     border-radius: 20px;
 }
 .PlaceOrderForm-addCustomer{
-    width: 20vw;
+    width: 27vw;
     background-color: rgb(183, 182, 190);
     border-radius: 5px;
     margin-top: 10px;
-    margin-left: 60vw;
+    margin-left: 52vw;
     position: absolute;
 }
-/* .PlaceOrderForm-itemList{
+.placeorderbtn{
+    width: 27vw;
+    margin-left: 52vw;
+    margin-top: -8vh;
+    position: absolute;
+}
+.PlaceOrderForm-Total{
+    width: 27vw;
+    height: 10vh;
+    background-color: rgb(183, 182, 190);
+    border-radius:20px;
+    margin-top: -40vh;
+    margin-left: 52vw;
+    position: absolute;
+}
+
+.PlaceOrderForm-Balance{
+    width: 27vw;
+    height: 20vh;
+    background-color: rgb(183, 182, 190);
+    border-radius:20px;
+    margin-top: -28vh;
+    margin-left: 52vw;
+    position: absolute;
+}
+.PlaceOrderForm-itemList{
     width: 50vw;
     height: 40vh;
     background-color: rgb(183, 182, 190);
     border-radius:20px;
-    margin-top: -70px;
-    margin-left: 20px;
-    position: absolute;
-    
-} */
-/* .PlaceOrderForm-CartList{
-    width: 76vw;
+    margin-left: 1vw;
+}
+.PlaceOrderForm-CartList{
+    width: 50vw;
     height: 40vh;
     background-color: rgb(199, 222, 239);
     border-radius:20px;
     margin-top: 10px;
-    margin-left: 5vw;
-    position: absolute;
-}
-.PlaceOrderForm-Total{
-    width: 76vw;
-    height: 6vh;
-    background-color: rgb(183, 182, 190);
-    border-radius:20px;
-    margin-top: 0px;
-    margin-left: 5vw;
-}
-.PlaceOrderForm-Balance{
-    width: 76vw;
-    height:20vh;
-    background-color: rgb(183, 182, 190);
-    border-radius:20px;
-    margin-top: 5px;
-    margin-left: 5vw;
-    position: absolute;
-} */
-.placeorderbtn{
-    margin-top: 500px;
-    margin-left: 5vw;
+    margin-left: 1vw;
 }
 }
 
@@ -224,6 +224,7 @@ header{
     .placeorderbtn{
         margin-left: 5vw;
     }
+   
  }
 
 /* .PayementSection{
