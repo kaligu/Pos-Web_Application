@@ -12,6 +12,7 @@ header{
     border-bottom-right-radius: 100px;
 }
 
+@media (max-width: 1000px) {
 /* For Dekstop Views */
 .mobSideNavBarHide{
     display: none;
@@ -128,6 +129,7 @@ header{
     border-radius:20px;
     margin-top: 5px;
     margin-left: 5vw;
+}
 }
 
 @media (max-width: 768px) {
