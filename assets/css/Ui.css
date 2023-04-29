@@ -80,7 +80,7 @@ header{
     border-radius: 10px;
 }
 .PlaceOrderForm{
-    width: 85vw;
+    width: 80vw;
     height:1200px;
     background-color: rgb(119, 137, 162);
     position: absolute;
@@ -89,19 +89,20 @@ header{
     border-radius: 20px;
 }
 .PlaceOrderForm-addCustomer{
-    width: 76vw;
+    width: 20vw;
     background-color: rgb(183, 182, 190);
     border-radius: 5px;
     margin-top: 10px;
-    margin-left: 5vw;
+    margin-left: 60vw;
 }
 .PlaceOrderForm-itemList{
-    width: 76vw;
+    width: 50vw;
     height: 40vh;
     background-color: rgb(183, 182, 190);
     border-radius:20px;
-    margin-top: 10px;
-    margin-left: 5vw;
+    margin-top: -70px;
+    margin-left: 20px;
+    position: absolute;
     
 }
 .PlaceOrderForm-CartList{
