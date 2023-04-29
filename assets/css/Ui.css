@@ -12,8 +12,8 @@ header{
     border-bottom-right-radius: 100px;
 }
 
-@media (max-width: 1000px) {
-/* For Dekstop Views */
+@media (min-width: 768px) {
+/* For Dmax-width: 768pxekstop Views */
 .mobSideNavBarHide{
     display: none;
 }
