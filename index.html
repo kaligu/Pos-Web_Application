@@ -12,67 +12,79 @@
   <!-- Initialize Boostrap Stylesheet-->
   <link href="assets/css/Ui.css" rel="stylesheet"/> 
 
-</head>       
-<body style="background-color: #636e64">
+</head>
+
+<body style="background-color: #28362a">
 <!--nav bar-->
   <nav class="navbar navbar-dark navbar-expand-sm" style="background-color:#018711">
-    <img src="assets/icons/logo.png" class="img-fluid col-lg-4" alt="icon" style="width: 140px">
-    <a class="navbar-brand col-lg-7 " style="color: #ababab">Kethbima Meals Pos</a>
+    <img src="assets/icons/logo.png" class="img-fluid col-lg-3" alt="icon" style="width: 140px">
+    <a class="navbar-brand col-lg-6 " style="color: #28362a; font-style: italic;font-weight: bold">Kethbima Meals Pos</a>
     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item text-white mx-3 my-3">Place Order </li>
-        <li class="nav-item text-white mx-3 my-3">Customer Manage</li>
-        <li class="nav-item text-white mx-3 my-3">Item Manage</li>
+        <li class="nav-item text-white mx-1 my-2">
+          <button type="button" class="btn btn-link" id="a" style="color: white">Place Order</button>
+        </li>
+        <li class="nav-item text-white mx-1 my-2">
+          <button type="button" class="btn btn-link" id="aa" style="color: white">Order Details</button>
+        </li>
+        <li class="nav-item text-white mx-1 my-2">
+          <button type="button" class="btn btn-link" id="btnCustomerForm" style="color: white">Customer</button>
+        </li>
+        <li class="nav-item text-white mx-1 my-2">
+          <button type="button" class="btn btn-link" id="btnItemForm" style="color: white">Item</button>
+        </li>
+
       </ul>
   </div>
   </nav>
 
 <!--Customer Form-->
-<div class="card my-2">
+<div class="card my-2" id="customerForm" style="display: none;">
   <div class="card-header text-dark" style="font-size: 25px; background-color: #8da694">
     Customer Manage
   </div>
   <div class="card-body text-dark" style="background-color: #afccb7">
-    <!-- Button trigger add customer modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add</button>
-    <!-- Button trigger update customer modal -->
-    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#customerUpdateModal">! Update</button>
-    <!-- Button trigger Remove customer modal -->
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#customerRemoveModal">- Remove</button>
-    <!-- Search Customer -->
-    <form class="d-flex my-3" role="search" >
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width: 20vw">
-      <button class="btn btn-outline-dark mx-2" type="submit">Search</button>
-    </form>
+    <div class="row">
+      <!-- Button trigger add customer modal -->
+      <button type="button" class="btn btn-primary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add</button>
+      <!-- Button trigger update customer modal -->
+      <button type="button" class="btn btn-secondary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#customerUpdateModal">! Update</button>
+      <!-- Button trigger Remove customer modal -->
+      <button type="button" class="btn btn-danger my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#customerRemoveModal">- Remove</button>
+    </div>
+    <div class="row">
+      <!-- Search Customer -->
+      <form class="my-4 col-sm-12 col-md-8 col-lg-6" role="search" >
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
     <!--customer view table -->
     <div class="table-responsive">
-    <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">NIC</th>
-        <th scope="col">Name</th>
-        <th scope="col">Tell</th>
-        <th scope="col">Address</th>
-      </tr>
-      </thead>
-      <tbody>
-      <!--add rows to customer view table-->
-      <tr>
-        <th scope="row">200133702832</th>
-        <td>Kaligu</td>
-        <td>0767095344</td>
-        <td>Horana</td>
-      </tr>
-      </tbody>
-    </table>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">NIC</th>
+          <th scope="col">Name</th>
+          <th scope="col">Tell</th>
+          <th scope="col">Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--add rows to customer view table-->
+        <tr>
+          <th scope="row">200133702832</th>
+          <td>Kaligu</td>
+          <td>0767095344</td>
+          <td>Horana</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
-
-
 
 <!-- add cutomer Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -193,7 +205,177 @@
   </div>
 </div>
 
+
+
+<!--Item Form-->
+<div class="card my-2" id="itemForm" style="display: none;">
+  <div class="card-header text-dark" style="font-size: 25px; background-color: #8da694">
+    Item Manage
+  </div>
+  <div class="card-body text-dark" style="background-color: #afccb7">
+    <div class="row">
+      <!-- Button trigger add item modal -->
+      <button type="button" class="btn btn-primary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#itemAddModal">+ Add</button>
+      <!-- Button trigger update item modal -->
+      <button type="button" class="btn btn-secondary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#itemUpdateModal">! Update</button>
+      <!-- Button trigger Remove item modal -->
+      <button type="button" class="btn btn-danger my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#itemRemoveModal">- Remove</button>
+    </div>
+    <div class="row">
+      <!-- Search Item -->
+      <form class="my-4 col-sm-12 col-md-8 col-lg-6" role="search" >
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+    <!--item view table -->
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Code</th>
+          <th scope="col">Description</th>
+          <th scope="col">QTY</th>
+          <th scope="col">Unit Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--add rows to customer view table-->
+        <tr>
+          <th scope="row">i001</th>
+          <td>Carrot</td>
+          <td>1kg</td>
+          <td>500</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- add cutomer Modal -->
+<div class="modal fade" id="itemAddModal" tabindex="-1" aria-labelledby="itemAddModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="itemAddModalLabel">Add a new Item</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--add item form-->
+        <form>
+          <div class="mb-3">
+            <label for="itemAddCode" class="form-label">Code </label>
+            <input type="text" class="form-control" id="itemAddCode">
+          </div>
+          <div class="mb-3">
+            <label for="itemAddDescription" class="form-label">Description </label>
+            <input type="text" class="form-control" id="itemAddDescription">
+          </div>
+          <div class="mb-3">
+            <label for="itemAddQTY" class="form-label">QTY </label>
+            <input type="number" class="form-control" id="itemAddQTY">
+          </div>
+          <div class="mb-3">
+            <label for="itemAddUnitPrice" class="form-label">Unit Price </label>
+            <input type="number" class="form-control" id="itemAddUnitPrice">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Remove item Modal -->
+<div class="modal fade" id="itemRemoveModal" tabindex="-1" aria-labelledby="itemRemoveModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="itemRemoveModalLabel">Remove existing Item</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Remove item form-->
+        <form>
+          <div class="mb-3">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </div>
+          <div class="mb-3">
+            <label for="itemRemoveCode" class="form-label">Code </label>
+            <input type="text" class="form-control" id="itemRemoveCode">
+          </div>
+          <div class="mb-3">
+            <label for="itemRemoveDescription" class="form-label">Description </label>
+            <input type="text" class="form-control" id="itemRemoveDescription">
+          </div>
+          <div class="mb-3">
+            <label for="itemRemoveQTY" class="form-label">QTY </label>
+            <input type="number" class="form-control" id="itemRemoveQTY">
+          </div>
+          <div class="mb-3">
+            <label for="itemRemoveUnitPrice" class="form-label">Unit Price </label>
+            <input type="number" class="form-control" id="itemRemoveUnitPrice">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Update item Modal -->
+<div class="modal fade" id="itemUpdateModal" tabindex="-1" aria-labelledby="itemUpdateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="itemUpdateModalLabel">Update existing Item</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Update item form-->
+        <form>
+          <div class="mb-3">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </div>
+          <div class="mb-3">
+            <label for="itemUpdateCode" class="form-label">Code </label>
+            <input type="text" class="form-control" id="itemUpdateCode">
+          </div>
+          <div class="mb-3">
+            <label for="itemUpdateDescription" class="form-label">Description </label>
+            <input type="number" class="form-control" id="itemUpdateDescription">
+          </div>
+          <div class="mb-3">
+            <label for="itemUpdateQTY" class="form-label">QTY </label>
+            <input type="number" class="form-control" id="itemUpdateQTY">
+          </div>
+          <div class="mb-3">
+            <label for="itemUpdateUnitPrice" class="form-label">UnitPrice</label>
+            <input type="number" class="form-control" id="itemUpdateUnitPrice">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Update Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+
 <!-- Initialize Boostrap JS-->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/MainScript.js"></script>
 </body>
 </html>
