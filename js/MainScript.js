@@ -18,3 +18,4 @@ $('#btnPlaceorderForm').click(function() {
     document.querySelector("#itemForm").style.display="none";
     document.querySelector("#customerForm").style.display="none";
 });
+
