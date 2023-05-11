@@ -1,5 +1,6 @@
 $('#btnCustomerForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#DasboardForm").style.display="none";
     document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="none";
     document.querySelector("#customerForm").style.display="block";
@@ -8,6 +9,7 @@ $('#btnCustomerForm').click(function() {
 
 $('#btnItemForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#DasboardForm").style.display="none";
     document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="none";
     document.querySelector("#itemForm").style.display="block";
@@ -16,6 +18,7 @@ $('#btnItemForm').click(function() {
 
 $('#btnPlaceorderForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#DasboardForm").style.display="none";
     document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="block";
     document.querySelector("#itemForm").style.display="none";
@@ -24,7 +27,17 @@ $('#btnPlaceorderForm').click(function() {
 
 $('#btnOrderDetailsForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#DasboardForm").style.display="none";
     document.querySelector("#OrderDetailsForm").style.display="block";
+    document.querySelector("#placeOrderForm").style.display="none";
+    document.querySelector("#itemForm").style.display="none";
+    document.querySelector("#customerForm").style.display="none";
+});
+
+$('#logoName').click(function() {
+    // Load the card.html file into the #card-container div
+    document.querySelector("#DasboardForm").style.display="block";
+    document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="none";
     document.querySelector("#itemForm").style.display="none";
     document.querySelector("#customerForm").style.display="none";
