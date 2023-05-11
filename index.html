@@ -43,10 +43,10 @@
 
 <!--Customer Form-->
 <div class="card my-2 mx-2" id="customerForm" style="display: none;">
-  <div class="card-header text-dark" style="font-size: 25px; background-color: #8da694">
+  <div class="card-header text-dark" style="font-size: 25px; background-color: #848684">
     Customer Manage
   </div>
-  <div class="card-body text-dark" style="background-color: #afccb7">
+  <div class="card-body text-dark" style="background-color: #a5a8a6">
     <div class="row">
       <!-- Button trigger add customer modal -->
       <button type="button" class="btn btn-primary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add</button>
@@ -209,10 +209,10 @@
 
 <!--Item Form-->
 <div class="card my-2 mx-2" id="itemForm" style="display: none;">
-  <div class="card-header text-dark" style="font-size: 25px; background-color: #8da694">
+  <div class="card-header text-dark" style="font-size: 25px; background-color: #848684">
     Item Manage
   </div>
-  <div class="card-body text-dark" style="background-color: #afccb7">
+  <div class="card-body text-dark" style="background-color: #a5a8a6">
     <div class="row">
       <!-- Button trigger add item modal -->
       <button type="button" class="btn btn-primary my-1 col-sm-12 col-md-8 mx-md-2 col-lg-2 mx-lg-1" data-bs-toggle="modal" data-bs-target="#itemAddModal">+ Add</button>
@@ -373,140 +373,148 @@
 
 
 <!--Place Order Form-->
-<div class="container-fluid " style="display: none" id="placeOrderForm">
+<div class="card my-2 mx-2" id="placeOrderForm" style="display: none;">
+  <div class="card-header text-dark" style="font-size: 25px; background-color: #848684">
+   Place Order
+  </div>
+  <div class="card-body text-dark" style="background-color: #a5a8a6">
+    <div class="row">
+      <div class="containermy-2 col-md-6 col-lg-6 my-2">
+        <div class="row" style="background-color: #5B6F69">
+          <div class="card my-2 mx-2 " style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
+          <div class="card my-2 mx-2" style="width: 100px; height: 100px">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              ...
+            </div>
+          </div>
 
-  <div class="row">
-    <div class="container bg-success my-2 col-md-6 col-lg-6">
-      <div class="row">
-        <div class="card my-2 mx-2 " style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
+        </div>
+      </div>
+
+
+      <div class="container bg-secondary my-2 col-lg-6 col-lg-6 my-2">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label fw-bold">Select Customer</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Customer...Type NIC...">
+          <button type="button" class="btn my-2 mx-1 text-white" style="background-color: rgba(42,57,42,0.91)">*Tempory Customer</button>
+          <button type="button" class="btn bg-dark my-2 mx-1 text-white">+New Customer</button>
+          <p class="fst-normal d-lg-inline-block d-md-inline-block mx-3 ms-md-0  mx-lg-0 my-0">Customer :- <p class="fst-italic d-lg-inline-block d-md-inline-block mx-3 ms-md-0 mx-lg-1 my0">00000000000</p></p>
+        </div>
+        <div class="mb-3 ">
+          <label class="form-label fw-bold">Cart List</label>
+          <!--item view table -->
+          <div class="table-responsive">
+            <table class="table ">
+              <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Description</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Per Unit</th>
+                <th scope="col">Units</th>
+                <th scope="col">Units Price</th>
+                <th scope="col"> - </th>
+              </tr>
+              </thead>
+              <tbody>
+              <!--add rows to customer view table-->
+              <tr>
+                <th scope="row">i001</th>
+                <td>Carrot</td>
+                <td>1kg</td>
+                <td>500</td>
+                <td><input type="number" class="form-control" id="entercartUnits" value="2"></td>
+                <td>1000</td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16" id="trashCartListitem">
+                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                  <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                </svg></i></td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
+        <div class="mb-3 " style="background-color:#018711">
+          <div class="row mx-2">
+            <div class="col-4">
+              <p class="fw-medium">Total Items</p>
+            </div>
+            <div class="col-4">
+              <p class="fw-normal">2</p>
+            </div>
           </div>
-        </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
+          <div class="row mx-2">
+            <div class="col-4">
+              <p class="fw-bolder">Total Price</p>
+            </div>
+            <div class="col-4">
+              <p class="fw-bolder fs-2">1000</p>
+            </div>
           </div>
-        </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
+          <div class="row mx-2">
+            <div class="col-4">
+              <p class="fw-bold">Cash</p>
+            </div>
+            <div class="col-4">
+              <input type="number" class="form-control" id="entercartCashPayment" value="2">
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary w-50">Paid</button>
+            </div>
           </div>
-        </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
-          </div>
-        </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
-          </div>
-        </div>
-        <div class="card my-2 mx-2" style="width: 100px; height: 100px">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            ...
+          <div class="row mx-2">
+            <div class="col-4">
+              <p class="fw-bolder">Balance</p>
+            </div>
+            <div class="col-4">
+              <p class="fw-bold fs-5">0</p>
+            </div>
           </div>
         </div>
 
       </div>
+
     </div>
-
-
-        <div class="container bg-secondary my-2 col-lg-6 col-lg-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label fw-bold">Select Customer</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Customer...Type NIC...">
-            <button type="button" class="btn bg-success my-2 mx-1">*Tempory Customer</button>
-            <button type="button" class="btn bg-primary my-2 mx-1">+New Customer</button>
-            <p class="fst-normal d-lg-inline-block d-md-inline-block mx-3 ms-md-0  mx-lg-0 my-0">Customer :- <p class="fst-italic d-lg-inline-block d-md-inline-block mx-3 ms-md-0 mx-lg-1 my0">00000000000</p></p>
-          </div>
-          <div class="mb-3 ">
-            <label class="form-label fw-bold">Cart List</label>
-            <!--item view table -->
-            <div class="table-responsive">
-              <table class="table ">
-                <thead>
-                <tr>
-                  <th scope="col">Code</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">QTY</th>
-                  <th scope="col">Per Unit</th>
-                  <th scope="col">Units</th>
-                  <th scope="col">Units Price</th>
-                  <th scope="col"> - </th>
-                </tr>
-                </thead>
-                <tbody>
-                <!--add rows to customer view table-->
-                <tr>
-                  <th scope="row">i001</th>
-                  <td>Carrot</td>
-                  <td>1kg</td>
-                  <td>500</td>
-                  <td><input type="number" class="form-control" id="entercartUnits" value="2"></td>
-                  <td>1000</td>
-                  <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16" id="trashCartListitem">
-                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
-                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                  </svg></i></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="mb-3 bg-primary">
-            <div class="row mx-2">
-              <div class="col">
-                <p class="fw-medium">Total Items</p>
-              </div>
-              <div class="col">
-                <p class="fw-normal">2</p>
-              </div>
-            </div>
-            <div class="row mx-2">
-              <div class="col">
-                <p class="fw-bolder">Total Price</p>
-              </div>
-              <div class="col">
-                <p class="fw-bolder fs-2">1000</p>
-              </div>
-            </div>
-            <div class="row mx-2">
-              <div class="col">
-                <p class="fw-bold">Cash</p>
-              </div>
-              <div class="col">
-                <input type="number" class="form-control" id="entercartCashPayment" value="2">
-              </div>
-            </div>
-            <div class="row mx-2">
-              <div class="col">
-                <p class="fw-bolder">Balance</p>
-              </div>
-              <div class="col">
-                <p class="fw-bold fs-5">0</p>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
   </div>
+</div>
 
-  </div>
+
 
 
 
