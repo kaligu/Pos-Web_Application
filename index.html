@@ -28,7 +28,7 @@
           <button type="button" class="btn btn-link" id="btnPlaceorderForm" style="color: white">Place Order</button>
         </li>
         <li class="nav-item text-white mx-1 my-2">
-          <button type="button" class="btn btn-link" id="aa" style="color: white">Order Details</button>
+          <button type="button" class="btn btn-link" id="btnOrderDetailsForm" style="color: white">Order Details</button>
         </li>
         <li class="nav-item text-white mx-1 my-2">
           <button type="button" class="btn btn-link" id="btnCustomerForm" style="color: white">Customer</button>
@@ -374,13 +374,14 @@
 
 <!--Place Order Form-->
 <div class="card my-2 mx-2" id="placeOrderForm" style="display: none;">
-  <div class="card-header text-dark" style="font-size: 25px; background-color: #848684">
+  <div class="card-header text-dark " style="font-size: 25px; background-color: #848684">
    Place Order
   </div>
   <div class="card-body text-dark" style="background-color: #a5a8a6">
     <div class="row">
-      <div class="containermy-2 col-md-6 col-lg-6 my-2">
-        <div class="row" style="background-color: #5B6F69">
+      <div class="containermy-2 col-md-6 col-lg-5 my-2 mx-4">
+        <div class="row" style="background-color: #516175">
+          <label class="form-label fw-bold text-white my-2">Select Item</label>
           <div class="card my-2 mx-2 " style="width: 100px; height: 100px">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
@@ -428,16 +429,25 @@
       </div>
 
 
-      <div class="container bg-secondary my-2 col-lg-6 col-lg-6 my-2">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label fw-bold">Select Customer</label>
+      <div class="container  col-lg-6 col-lg-4 my-2 mx-4" style="background-color: #5b7887">
+        <div class="mb-3 my-1">
+          <div class="row">
+            <div class="col-9">
+              <label for="exampleFormControlInput1" class="form-label fw-bold text-white">Select Customer</label>
+            </div>
+            <div class="col-3">
+              <label class="form-label fs-6">Order ID - </label>
+              <label class="form-label fs-6">O001</label>
+            </div>
+          </div>
+
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Customer...Type NIC...">
           <button type="button" class="btn my-2 mx-1 text-white" style="background-color: rgba(42,57,42,0.91)">*Tempory Customer</button>
           <button type="button" class="btn bg-dark my-2 mx-1 text-white">+New Customer</button>
           <p class="fst-normal d-lg-inline-block d-md-inline-block mx-3 ms-md-0  mx-lg-0 my-0">Customer :- <p class="fst-italic d-lg-inline-block d-md-inline-block mx-3 ms-md-0 mx-lg-1 my0">00000000000</p></p>
         </div>
-        <div class="mb-3 ">
-          <label class="form-label fw-bold">Cart List</label>
+        <div class="mb-3 my-2">
+          <label class="form-label fw-bold text-white">Cart List</label>
           <!--item view table -->
           <div class="table-responsive">
             <table class="table ">
@@ -470,7 +480,7 @@
             </table>
           </div>
         </div>
-        <div class="mb-3 " style="background-color:#018711">
+        <div class="mb-3 my-4" style="background-color:#a5c3c7">
           <div class="row mx-2">
             <div class="col-4">
               <p class="fw-medium">Total Items</p>
@@ -503,8 +513,8 @@
               <p class="fw-bold fs-5">0</p>
             </div>
           </div>
-          <div class="row mx-2">
-          <button type="button" class="btn btn-primary w-50">Paid</button>
+          <div class="row mx-2 my-2">
+          <button type="button" class="btn btn-primary w-50" style="margin-bottom: 5px">Paid</button>
             </div>
         </div>
 
@@ -515,7 +525,47 @@
 </div>
 
 
-
+<!--Order Detail Form-->
+<div class="card my-2 mx-2" id="OrderDetailsForm" style="display: none;">
+  <div class="card-header text-dark" style="font-size: 25px; background-color: #848684">
+    Order Details View
+  </div>
+  <div class="card-body text-dark" style="background-color: #a5a8a6">
+    <div class="row">
+      <!-- Search Customer -->
+      <form class="my-4 col-sm-12 col-md-8 col-lg-6" role="search" >
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+    <!--customer view table -->
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Order ID</th>
+          <th scope="col">Customer ID</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Date</th>
+          <th scope="col">Item Code</th>
+          <th scope="col">Item Description</th>
+          <th scope="col">Item Qty</th>
+          <th scope="col">Item Per Unit Price</th>
+          <th scope="col">Ordered Units</th>
+          <th scope="col">Ordered Units Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--add rows to customer view table-->
+        <tr>
+          <td>O001</td>
+          <td>200133702832</td>
+          <td>Kaligu</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 
 </div>

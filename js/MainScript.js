@@ -1,5 +1,6 @@
 $('#btnCustomerForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="none";
     document.querySelector("#customerForm").style.display="block";
     document.querySelector("#itemForm").style.display="none";
@@ -7,6 +8,7 @@ $('#btnCustomerForm').click(function() {
 
 $('#btnItemForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="none";
     document.querySelector("#itemForm").style.display="block";
     document.querySelector("#customerForm").style.display="none";
@@ -14,8 +16,16 @@ $('#btnItemForm').click(function() {
 
 $('#btnPlaceorderForm').click(function() {
     // Load the card.html file into the #card-container div
+    document.querySelector("#OrderDetailsForm").style.display="none";
     document.querySelector("#placeOrderForm").style.display="block";
     document.querySelector("#itemForm").style.display="none";
     document.querySelector("#customerForm").style.display="none";
 });
 
+$('#btnOrderDetailsForm').click(function() {
+    // Load the card.html file into the #card-container div
+    document.querySelector("#OrderDetailsForm").style.display="block";
+    document.querySelector("#placeOrderForm").style.display="none";
+    document.querySelector("#itemForm").style.display="none";
+    document.querySelector("#customerForm").style.display="none";
+});
