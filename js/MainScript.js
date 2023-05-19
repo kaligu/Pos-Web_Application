@@ -42,3 +42,27 @@ $('#logoName').click(function() {
     document.querySelector("#itemForm").style.display="none";
     document.querySelector("#customerForm").style.display="none";
 });
+
+//item global array
+var itemList = [];
+
+//add customer
+$('#itemAddbtnSave').click(function () {
+    let item = {
+        Code : $("#itemAddCode").val(),
+        Description : $("#itemAddDescription").val(),
+        QTY : $("#itemAddQTY").val(),
+        UnitPrice : $("#itemAddUnitPrice").val()
+    }
+    itemList.push(item);
+    $('#itemAddModal').modal('hide');
+    alert("item saved!");
+    $('#viewAllTableBody').append(
+        '<tr>\n' +
+        '          <td>'+item.Code+'</td>\n' +
+        '          <td>'+item.Description+'</td>\n' +
+        '          <td>'+item.QTY+'</td>\n' +
+        '          <td>'+item.UnitPrice+'</td>\n' +
+        '        </tr>'
+    );
+});
